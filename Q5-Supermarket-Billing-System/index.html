@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Supermarket Billing System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <main class="container">
+
+
+        <!-- =================================================
+             HEADER
+             ================================================= -->
+
+        <header class="page-header">
+
+            <span class="tag">
+                SMART BILLING
+            </span>
+
+            <h1>
+                Supermarket Billing System
+            </h1>
+
+        </header>
+
+
+
+        <!-- =================================================
+             BILLING CARD
+             ================================================= -->
+
+        <section class="billing-card">
+
+
+            <!-- =================================================
+                 CUSTOMER DETAILS
+                 ================================================= -->
+
+            <div class="customer-section">
+
+                <div class="form-group">
+
+                    <label for="customerName">
+                        Customer Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter customer name"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="billNumber">
+                        Bill Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="billNumber"
+                        placeholder="Enter bill number"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PRODUCT SECTION
+                 ================================================= -->
+
+            <div class="section-heading">
+
+                <h2>
+                    Product Details
+                </h2>
+
+                <p>
+                    Enter quantity and unit price for each product.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PRODUCT TABLE
+                 ================================================= -->
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Product
+                            </th>
+
+                            <th>
+                                Quantity
+                            </th>
+
+                            <th>
+                                Unit Price (₹)
+                            </th>
+
+                            <th>
+                                Amount (₹)
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- ===============================
+                             PRODUCT 1
+                             =============================== -->
+
+                        <tr>
+
+                            <td>
+
+                                <label
+                                    for="product1"
+                                    class="sr-only"
+                                >
+                                    Product 1 Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="product1"
+                                    placeholder="Product 1"
+                                >
+
+                            </td>
+
+
+                            <td>
+
+                                <label
+                                    for="quantity1"
+                                    class="sr-only"
+                                >
+                                    Product 1 Quantity
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="quantity1"
+                                    min="0"
+                                    step="1"
+                                    placeholder="0"
+                                >
+
+                            </td>
+
+
+                            <td>
+
+                                <label
+                                    for="price1"
+                                    class="sr-only"
+                                >
+                                    Product 1 Unit Price
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="price1"
+                                    min="0"
+                                    step="0.01"
+                                    placeholder="0.00"
+                                >
+
+                            </td>
+
+
+                            <td>
+
+                                <span id="amount1">
+                                    ₹0.00
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- ===============================
+                             PRODUCT 2
+                             =============================== -->
+
+                        <tr>
+
+                            <td>
+
+                                <label
+                                    for="product2"
+                                    class="sr-only"
+                                >
+                                    Product 2 Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="product2"
+                                    placeholder="Product 2"
+                                >
+
+                            </td>
+
+
+                            <td>
+
+                                <label
+                                    for="quantity2"
+                                    class="sr-only"
+                                >
+                                    Product 2 Quantity
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="quantity2"
+                                    min="0"
+                                    step="1"
+                                    placeholder="0"
+                                >
+
+                            </td>
+
+
+                            <td>
+
+                                <label
+                                    for="price2"
+                                    class="sr-only"
+                                >
+                                    Product 2 Unit Price
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="price2"
+                                    min="0"
+                                    step="0.01"
+                                    placeholder="0.00"
+                                >
+
+                            </td>
+
+
+                            <td>
+
+                                <span id="amount2">
+                                    ₹0.00
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- ===============================
+                             PRODUCT 3
+                             =============================== -->
+
+                        <tr>
+
+                            <td>
+
+                                <label
+                                    for="product3"
+                                    class="sr-only"
+                                >
+                                    Product 3 Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="product3"
+                                    placeholder="Product 3"
+                                >
+
+                            </td>
+
+
+                            <td>
+
+                                <label
+                                    for="quantity3"
+                                    class="sr-only"
+                                >
+                                    Product 3 Quantity
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="quantity3"
+                                    min="0"
+                                    step="1"
+                                    placeholder="0"
+                                >
+
+                            </td>
+
+
+                            <td>
+
+                                <label
+                                    for="price3"
+                                    class="sr-only"
+                                >
+                                    Product 3 Unit Price
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="price3"
+                                    min="0"
+                                    step="0.01"
+                                    placeholder="0.00"
+                                >
+
+                            </td>
+
+
+                            <td>
+
+                                <span id="amount3">
+                                    ₹0.00
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 BUTTONS
+                 ================================================= -->
+
+            <div class="button-group">
+
+                <button
+                    type="button"
+                    id="calculateBtn"
+                >
+                    Generate Bill
+                </button>
+
+
+                <button
+                    type="button"
+                    id="resetBtn"
+                    class="reset-btn"
+                >
+                    Clear
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ERROR MESSAGE
+                 ================================================= -->
+
+            <p
+                id="errorMessage"
+                class="error-message"
+            ></p>
+
+
+
+            <!-- =================================================
+                 BILL RESULT
+                 ================================================= -->
+
+            <section
+                id="billResult"
+                class="bill-result"
+            >
+
+
+                <!-- BILL HEADER -->
+
+                <div class="bill-header">
+
+                    <div>
+
+                        <span>
+                            BILL SUMMARY
+                        </span>
+
+                        <h2 id="billCustomer">
+                            Customer Bill
+                        </h2>
+
+                    </div>
+
+
+                    <div class="bill-number-display">
+
+                        <small>
+                            BILL NO.
+                        </small>
+
+                        <strong id="displayBillNumber">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BILL ITEMS -->
+
+                <div
+                    id="billItems"
+                    class="bill-items"
+                >
+
+                    <!-- JavaScript inserts products here -->
+
+                </div>
+
+
+
+                <!-- BILL TOTALS -->
+
+                <div class="bill-totals">
+
+
+                    <div class="total-row">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="subtotal">
+                            ₹0.00
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="total-row discount-row">
+
+                        <span>
+                            Discount (10%)
+                        </span>
+
+                        <strong id="discount">
+                            ₹0.00
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="total-row final-row">
+
+                        <span>
+                            Final Payable Amount
+                        </span>
+
+                        <strong id="finalAmount">
+                            ₹0.00
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <p
+                    id="discountMessage"
+                    class="discount-message"
+                ></p>
+
+            </section>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FOOTER
+             ================================================= -->
+
+        <footer>
+            <p>
+                Supermarket Billing System
+            </p>
+            <p>
+                Created by 24CS228 - Tharun Pranav T
+            </p>
+            <p>
+                For Web Technology Laboratory - Assignment I
+            </p>
+
+        </footer>
+
+    </main>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,817 @@
+/* =========================================================
+   1. RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   2. BODY
+   ========================================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ecfdf5,
+            #f8fafc
+        );
+
+    color: #1e293b;
+
+    min-height: 100vh;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   3. MAIN CONTAINER
+   ========================================================= */
+
+.container {
+    width: min(1100px, 92%);
+
+    margin: 0 auto;
+
+    padding-top: 60px;
+}
+
+
+/* =========================================================
+   4. PAGE HEADER
+   ========================================================= */
+
+.page-header {
+    max-width: 750px;
+
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+
+.tag {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #d1fae5;
+
+    color: #047857;
+
+    font-size: 0.72rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.page-header h1 {
+    color: #064e3b;
+
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+
+    line-height: 1.1;
+
+    margin-bottom: 15px;
+}
+
+
+.page-header p {
+    color: #64748b;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   5. BILLING CARD
+   ========================================================= */
+
+.billing-card {
+    background: #ffffff;
+
+    padding: 40px;
+
+    border: 1px solid #d1fae5;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================================================
+   6. CUSTOMER DETAILS
+   ========================================================= */
+
+.customer-section {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+
+    margin-bottom: 40px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.form-group label {
+    color: #334155;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+}
+
+
+.form-group input {
+    width: 100%;
+
+    min-height: 48px;
+
+    padding: 12px 15px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 9px;
+
+    background: #f8fafc;
+
+    color: #1e293b;
+
+    font-family: inherit;
+
+    font-size: 0.95rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.form-group input:focus {
+    border-color: #059669;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 4px rgba(5, 150, 105, 0.1);
+}
+
+
+/* =========================================================
+   7. SECTION HEADING
+   ========================================================= */
+
+.section-heading {
+    border-bottom: 1px solid #e2e8f0;
+
+    padding-bottom: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.section-heading h2 {
+    color: #064e3b;
+
+    font-size: 1.4rem;
+}
+
+
+.section-heading p {
+    color: #64748b;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   8. TABLE
+   ========================================================= */
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    margin-bottom: 30px;
+}
+
+
+table {
+    width: 100%;
+
+    min-width: 700px;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+
+thead {
+    background: #064e3b;
+
+    color: #ffffff;
+}
+
+
+th {
+    padding: 15px;
+
+    text-align: left;
+
+    font-size: 0.8rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+}
+
+
+td {
+    padding: 14px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    background: #ffffff;
+}
+
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+tbody tr:hover td {
+    background: #f0fdf4;
+}
+
+
+/* =========================================================
+   9. TABLE INPUTS
+   ========================================================= */
+
+td input {
+    width: 100%;
+
+    min-height: 42px;
+
+    padding: 9px 11px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 7px;
+
+    background: #f8fafc;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 0.9rem;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+td input:focus {
+    border-color: #059669;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(5, 150, 105, 0.1);
+}
+
+
+/* =========================================================
+   10. LIVE AMOUNT
+   ========================================================= */
+
+.amount-cell {
+    color: #047857;
+
+    font-weight: bold;
+
+    font-size: 1rem;
+
+    white-space: nowrap;
+
+    transition:
+        transform 0.15s ease,
+        color 0.15s ease;
+}
+
+
+.amount-cell.updated {
+    transform: scale(1.05);
+
+    color: #059669;
+}
+
+
+/* =========================================================
+   11. SCREEN READER LABEL
+   ========================================================= */
+
+.sr-only {
+    position: absolute;
+
+    width: 1px;
+
+    height: 1px;
+
+    padding: 0;
+
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+
+    border: 0;
+}
+
+
+/* =========================================================
+   12. BUTTONS
+   ========================================================= */
+
+.button-group {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.button-group button {
+    min-height: 48px;
+
+    padding: 0 26px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #059669;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.button-group button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(5, 150, 105, 0.25);
+}
+
+
+.button-group .reset-btn {
+    background: #e2e8f0;
+
+    color: #334155;
+
+    box-shadow: none;
+}
+
+
+.button-group .reset-btn:hover {
+    box-shadow:
+        0 5px 15px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================================================
+   13. ERROR MESSAGE
+   ========================================================= */
+
+.error-message {
+    min-height: 25px;
+
+    text-align: center;
+
+    color: #dc2626;
+
+    font-size: 0.88rem;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   14. BILL RESULT
+   ========================================================= */
+
+.bill-result {
+    display: none;
+
+    margin-top: 30px;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ecfdf5,
+            #ffffff
+        );
+
+    border: 1px solid #a7f3d0;
+
+    border-radius: 16px;
+
+    animation: billAppear 0.5s ease;
+}
+
+
+/* =========================================================
+   15. BILL HEADER
+   ========================================================= */
+
+.bill-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #d1fae5;
+}
+
+
+.bill-header span {
+    color: #047857;
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.bill-header h2 {
+    color: #064e3b;
+
+    font-size: 1.7rem;
+}
+
+
+.bill-number-display {
+    text-align: right;
+}
+
+
+.bill-number-display small {
+    display: block;
+
+    color: #64748b;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 1px;
+}
+
+
+.bill-number-display strong {
+    color: #047857;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   16. BILL ITEMS
+   ========================================================= */
+
+.bill-items {
+    border: 1px solid #d1fae5;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.bill-item {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        100px
+        130px;
+
+    gap: 15px;
+
+    padding: 13px 15px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+.bill-item:last-child {
+    border-bottom: none;
+}
+
+
+.bill-item-header {
+    background: #f0fdf4;
+
+    color: #047857;
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+.bill-item span:nth-child(2),
+.bill-item span:nth-child(3) {
+    text-align: right;
+}
+
+
+.bill-item .item-name {
+    font-weight: bold;
+
+    color: #334155;
+}
+
+
+/* =========================================================
+   17. BILL TOTALS
+   ========================================================= */
+
+.bill-totals {
+    max-width: 500px;
+
+    margin-left: auto;
+
+    margin-top: 25px;
+}
+
+
+.total-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 12px 0;
+
+    color: #475569;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+.total-row strong {
+    color: #334155;
+}
+
+
+.discount-row strong {
+    color: #16a34a;
+}
+
+
+.final-row {
+    margin-top: 8px;
+
+    padding: 18px 0;
+
+    border-bottom: none;
+
+    color: #064e3b;
+
+    font-size: 1.05rem;
+}
+
+
+.final-row strong {
+    color: #047857;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   18. DISCOUNT MESSAGE
+   ========================================================= */
+
+.discount-message {
+    margin-top: 20px;
+
+    padding: 12px 15px;
+
+    border-radius: 8px;
+
+    background: #d1fae5;
+
+    color: #065f46;
+
+    text-align: center;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   19. FOOTER
+   ========================================================= */
+
+footer {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    margin-top: 50px;
+
+    color: #64748b;
+
+    font-size: 0.8rem;
+}
+
+
+footer p {
+    margin: 4px;
+}
+
+
+/* =========================================================
+   20. BILL ANIMATION
+   ========================================================= */
+
+@keyframes billAppear {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   21. TABLET
+   ========================================================= */
+
+@media (max-width: 750px) {
+
+    .customer-section {
+        grid-template-columns: 1fr;
+    }
+
+
+    .billing-card {
+        padding: 30px 25px;
+    }
+
+}
+
+
+/* =========================================================
+   22. MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+
+        padding-top: 35px;
+    }
+
+
+    .billing-card {
+        padding: 22px 15px;
+    }
+
+
+    .button-group {
+        flex-direction: column;
+    }
+
+
+    .button-group button {
+        width: 100%;
+    }
+
+
+    .bill-result {
+        padding: 20px 15px;
+    }
+
+
+    .bill-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .bill-number-display {
+        text-align: left;
+    }
+
+
+    .bill-item {
+        grid-template-columns:
+            1fr
+            70px
+            90px;
+
+        gap: 8px;
+
+        font-size: 0.82rem;
+    }
+
+
+    .bill-totals {
+        width: 100%;
+    }
+
+}
