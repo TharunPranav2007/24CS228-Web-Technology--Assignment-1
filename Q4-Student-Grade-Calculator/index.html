@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Grade Calculator</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         MAIN CONTAINER
+         ===================================================== -->
+
+    <main class="container">
+
+        <!-- =================================================
+             HEADER
+             ================================================= -->
+
+        <header class="page-header">
+
+            <span class="tag">
+                ACADEMIC PERFORMANCE
+            </span>
+
+            <h1>
+                Student Grade Calculator
+            </h1>
+
+            <p>
+                Enter the marks obtained in five subjects
+                to calculate the total, average, grade and
+                pass/fail status.
+            </p>
+
+        </header>
+
+
+        <!-- =================================================
+             CALCULATOR CARD
+             ================================================= -->
+
+        <section class="calculator-card">
+
+
+            <!-- =================================================
+                 STUDENT DETAILS
+                 ================================================= -->
+
+            <div class="student-details">
+
+                <div class="form-group">
+
+                    <label for="studentName">
+                        Student Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Enter student name"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="rollNumber">
+                        Roll Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="rollNumber"
+                        placeholder="Enter roll number"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SUBJECT MARKS
+                 ================================================= -->
+
+            <div class="section-title">
+
+                <h2>
+                    Subject Marks
+                </h2>
+
+                <p>
+                    Enter marks between 0 and 100.
+                </p>
+
+            </div>
+
+
+            <div class="subjects-grid">
+
+
+                <!-- Subject 1 -->
+
+                <div class="subject-card">
+
+                    <label for="subject1">
+                        Subject 1
+                    </label>
+
+                    <input
+                        type="number"
+                        id="subject1"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                    >
+
+                </div>
+
+
+                <!-- Subject 2 -->
+
+                <div class="subject-card">
+
+                    <label for="subject2">
+                        Subject 2
+                    </label>
+
+                    <input
+                        type="number"
+                        id="subject2"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                    >
+
+                </div>
+
+
+                <!-- Subject 3 -->
+
+                <div class="subject-card">
+
+                    <label for="subject3">
+                        Subject 3
+                    </label>
+
+                    <input
+                        type="number"
+                        id="subject3"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                    >
+
+                </div>
+
+
+                <!-- Subject 4 -->
+
+                <div class="subject-card">
+
+                    <label for="subject4">
+                        Subject 4
+                    </label>
+
+                    <input
+                        type="number"
+                        id="subject4"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                    >
+
+                </div>
+
+
+                <!-- Subject 5 -->
+
+                <div class="subject-card">
+
+                    <label for="subject5">
+                        Subject 5
+                    </label>
+
+                    <input
+                        type="number"
+                        id="subject5"
+                        min="0"
+                        max="100"
+                        placeholder="0 - 100"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 BUTTONS
+                 ================================================= -->
+
+            <div class="button-group">
+
+                <button
+                    type="button"
+                    id="calculateBtn"
+                >
+                    Calculate Result
+                </button>
+
+                <button
+                    type="button"
+                    id="resetBtn"
+                    class="reset-btn"
+                >
+                    Reset
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 ERROR MESSAGE
+                 ================================================= -->
+
+            <p
+                id="errorMessage"
+                class="error-message"
+            ></p>
+
+
+            <!-- =================================================
+                 RESULT SECTION
+                 ================================================= -->
+
+            <section
+                id="resultSection"
+                class="result-section"
+            >
+
+                <div class="result-header">
+
+                    <div>
+
+                        <span>
+                            RESULT
+                        </span>
+
+                        <h2 id="resultStudent">
+                            Student Result
+                        </h2>
+
+                    </div>
+
+                    <div
+                        id="statusBadge"
+                        class="status-badge"
+                    >
+                        —
+                    </div>
+
+                </div>
+
+
+                <!-- Result Cards -->
+
+                <div class="result-grid">
+
+
+                    <div class="result-card">
+
+                        <span>
+                            TOTAL
+                        </span>
+
+                        <strong id="totalMarks">
+                            0
+                        </strong>
+
+                        <small>
+                            / 500
+                        </small>
+
+                    </div>
+
+
+                    <div class="result-card">
+
+                        <span>
+                            AVERAGE
+                        </span>
+
+                        <strong id="averageMarks">
+                            0
+                        </strong>
+
+                        <small>
+                            / 100
+                        </small>
+
+                    </div>
+
+
+                    <div class="result-card">
+
+                        <span>
+                            GRADE
+                        </span>
+
+                        <strong id="grade">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="result-card">
+
+                        <span>
+                            STATUS
+                        </span>
+
+                        <strong id="passStatus">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Subject-wise Result -->
+
+                <div class="subject-result">
+
+                    <h3>
+                        Subject-wise Performance
+                    </h3>
+
+                    <div id="subjectResultList">
+
+                        <!-- JavaScript inserts results here -->
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- =================================================
+             FOOTER
+             ================================================= -->
+
+        <footer>
+
+            <p>
+                Student Grade Calculator
+            </p>
+            <p>
+                Created by 24CS228 - Tharun Pranav T 
+            </p>
+            <p>
+                For Web Technology Laboratory - Assignment I
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
