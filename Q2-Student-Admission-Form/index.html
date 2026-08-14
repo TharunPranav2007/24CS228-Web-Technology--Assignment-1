@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Admission Portal</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="header">
+
+        <div class="header-content">
+
+            <p class="institution-label">
+                ADMISSION 2026–27
+            </p>
+
+            <h1>Student Admission Portal</h1>
+
+            <p>
+                Begin your academic journey with our institution.
+                Complete the form below to submit your application.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#personal">Personal Details</a>
+            <a href="#academic">Academic Details</a>
+            <a href="#course">Course Selection</a>
+            <a href="#documents">Documents</a>
+            <a href="#media">Campus Media</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main class="page-container">
+
+
+        <!-- =================================================
+             INTRODUCTION
+             ================================================= -->
+
+        <section class="intro-card">
+
+            <span class="badge">
+                ONLINE APPLICATION
+            </span>
+
+            <h2>Apply for Admission</h2>
+
+            <p>
+                Please provide accurate information in all the
+                required fields. Fields marked with
+                <strong>*</strong> are mandatory.
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+             CAMPUS IMAGE
+             ================================================= -->
+
+        <section class="media-card">
+
+            <div class="media-content">
+
+                <span class="section-tag">
+                    CAMPUS LIFE
+                </span>
+
+                <h2>Discover Your Future Campus</h2>
+
+                <p>
+                    Explore our institution and learn more about
+                    the opportunities available to students.
+                </p>
+
+            </div>
+
+            <div class="media-image">
+
+                <img
+                    src="media/campus.jpg"
+                    alt="College campus"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ADMISSION FORM
+             ================================================= -->
+
+        <form
+            class="admission-form"
+            action="#"
+            method="post"
+        >
+
+
+            <!-- =================================================
+                 01 PERSONAL DETAILS
+                 ================================================= -->
+
+            <fieldset id="personal">
+
+                <legend>01 · Personal Details</legend>
+
+                <div class="form-grid">
+
+
+                    <!-- Full Name -->
+
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address <span>*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Mobile Number -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Mobile Number <span>*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="10-digit mobile number"
+                            pattern="[0-9]{10}"
+                            maxlength="10"
+                            autocomplete="tel"
+                            required
+                        >
+
+                        <small>
+                            Enter exactly 10 digits.
+                        </small>
+
+                    </div>
+
+
+                    <!-- Date of Birth -->
+
+                    <div class="form-group">
+
+                        <label for="dob">
+                            Date of Birth <span>*</span>
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Gender -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Gender <span>*</span>
+                        </label>
+
+                        <div class="choice-group">
+
+                            <label class="choice">
+
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="male"
+                                    required
+                                >
+
+                                <span>Male</span>
+
+                            </label>
+
+                            <label class="choice">
+
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="female"
+                                >
+
+                                <span>Female</span>
+
+                            </label>
+
+                            <label class="choice">
+
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="other"
+                                >
+
+                                <span>Other</span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Color -->
+
+                    <div class="form-group">
+
+                        <label for="color">
+                            Preferred ID Card Color
+                        </label>
+
+                        <input
+                            type="color"
+                            id="color"
+                            name="color"
+                            value="#2563eb"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Address -->
+
+                <div class="form-group full-width">
+
+                    <label for="address">
+                        Address <span>*</span>
+                    </label>
+
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="4"
+                        placeholder="Enter your complete address"
+                        required
+                    ></textarea>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- =================================================
+                 02 ACADEMIC DETAILS
+                 ================================================= -->
+
+            <fieldset id="academic">
+
+                <legend>02 · Academic Details</legend>
+
+                <div class="form-grid">
+
+
+                    <!-- Qualification -->
+
+                    <div class="form-group">
+
+                        <label for="qualification">
+                            Highest Qualification <span>*</span>
+                        </label>
+
+                        <select
+                            id="qualification"
+                            name="qualification"
+                            required
+                        >
+
+                            <option value="">
+                                Select qualification
+                            </option>
+
+                            <option value="10th">
+                                10th Standard
+                            </option>
+
+                            <option value="12th">
+                                12th Standard
+                            </option>
+
+                            <option value="diploma">
+                                Diploma
+                            </option>
+
+                            <option value="degree">
+                                Undergraduate Degree
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Percentage -->
+
+                    <div class="form-group">
+
+                        <label for="percentage">
+                            Percentage <span>*</span>
+                        </label>
+
+                        <input
+                            type="number"
+                            id="percentage"
+                            name="percentage"
+                            min="0"
+                            max="100"
+                            step="0.01"
+                            placeholder="Enter percentage"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Previous Institution -->
+
+                    <div class="form-group">
+
+                        <label for="institution">
+                            Previous Institution <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="institution"
+                            name="institution"
+                            placeholder="School / College name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Passing Year -->
+
+                    <div class="form-group">
+
+                        <label for="year">
+                            Passing Year <span>*</span>
+                        </label>
+
+                        <input
+                            type="number"
+                            id="year"
+                            name="year"
+                            min="2020"
+                            max="2030"
+                            placeholder="YYYY"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- =================================================
+                 03 COURSE SELECTION
+                 ================================================= -->
+
+            <fieldset id="course">
+
+                <legend>03 · Course Selection</legend>
+
+                <div class="form-grid">
+
+
+                    <!-- Preferred Course -->
+
+                    <div class="form-group">
+
+                        <label for="courseName">
+                            Preferred Course <span>*</span>
+                        </label>
+
+                        <select
+                            id="courseName"
+                            name="courseName"
+                            required
+                        >
+
+                            <option value="">
+                                Select a course
+                            </option>
+
+                            <option value="cse">
+                                Computer Science Engineering
+                            </option>
+
+                            <option value="ece">
+                                Electronics and Communication
+                            </option>
+
+                            <option value="eee">
+                                Electrical and Electronics
+                            </option>
+
+                            <option value="mech">
+                                Mechanical Engineering
+                            </option>
+
+                            <option value="civil">
+                                Civil Engineering
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Counseling Time -->
+
+                    <div class="form-group">
+
+                        <label for="preferredTime">
+                            Preferred Counseling Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="preferredTime"
+                            name="preferredTime"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Areas of Interest -->
+
+                <div class="form-group full-width">
+
+                    <label>
+                        Areas of Interest
+                    </label>
+
+                    <div class="choice-group">
+
+                        <label class="choice">
+
+                            <input
+                                type="checkbox"
+                                name="interest"
+                                value="programming"
+                            >
+
+                            <span>Programming</span>
+
+                        </label>
+
+                        <label class="choice">
+
+                            <input
+                                type="checkbox"
+                                name="interest"
+                                value="ai"
+                            >
+
+                            <span>Artificial Intelligence</span>
+
+                        </label>
+
+                        <label class="choice">
+
+                            <input
+                                type="checkbox"
+                                name="interest"
+                                value="data"
+                            >
+
+                            <span>Data Science</span>
+
+                        </label>
+
+                        <label class="choice">
+
+                            <input
+                                type="checkbox"
+                                name="interest"
+                                value="design"
+                            >
+
+                            <span>UI / UX Design</span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- =================================================
+                 04 DOCUMENTS & ADDITIONAL INFORMATION
+                 ================================================= -->
+
+            <fieldset id="documents">
+
+                <legend>
+                    04 · Documents & Additional Information
+                </legend>
+
+                <div class="form-grid">
+
+
+                    <!-- Photograph -->
+
+                    <div class="form-group">
+
+                        <label for="photo">
+                            Upload Photograph <span>*</span>
+                        </label>
+
+                        <input
+                            type="file"
+                            id="photo"
+                            name="photo"
+                            accept="image/*"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Marksheet -->
+
+                    <div class="form-group">
+
+                        <label for="document">
+                            Upload Marksheet
+                        </label>
+
+                        <input
+                            type="file"
+                            id="document"
+                            name="document"
+                            accept=".pdf,.jpg,.jpeg,.png"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Confidence Range -->
+
+                <div class="form-group full-width">
+
+                    <label for="confidence">
+                        Confidence Level in Your Course Choice
+                    </label>
+
+                    <input
+                        type="range"
+                        id="confidence"
+                        name="confidence"
+                        min="0"
+                        max="100"
+                        value="75"
+                    >
+
+                    <div class="range-labels">
+
+                        <span>Low</span>
+
+                        <span>High</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Additional Information -->
+
+                <div class="form-group full-width">
+
+                    <label for="message">
+                        Additional Information
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Anything else you would like us to know?"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Terms -->
+
+                <div class="terms">
+
+                    <label class="choice">
+
+                        <input
+                            type="checkbox"
+                            name="terms"
+                            required
+                        >
+
+                        <span>
+                            I confirm that the information provided
+                            is accurate and complete.
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- =================================================
+                 FORM BUTTONS
+                 ================================================= -->
+
+            <div class="form-actions">
+
+                <button
+                    type="reset"
+                    class="reset-btn"
+                >
+                    Clear Form
+                </button>
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Submit Application →
+                </button>
+
+            </div>
+
+        </form>
+
+
+        <!-- =================================================
+             MEDIA ELEMENTS
+             ================================================= -->
+
+        <section
+            class="media-section"
+            id="media"
+        >
+
+            <div class="media-section-heading">
+
+                <span class="section-tag">
+                    MEDIA ELEMENTS
+                </span>
+
+                <h2>
+                    Learn More About Our Institution
+                </h2>
+
+                <p>
+                    HTML5 provides native support for multimedia
+                    content through image, video and audio elements.
+                </p>
+
+            </div>
+
+
+            <div class="media-grid">
+
+
+                <!-- Video -->
+
+                <div class="media-player">
+
+                    <h3>
+                        Campus Introduction
+                    </h3>
+
+                    <video
+                        controls
+                        poster="media/video-poster.jpg"
+                    >
+
+                        <source
+                            src="media/campus-tour.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support HTML5 video.
+
+                    </video>
+
+                </div>
+
+
+                <!-- Audio -->
+
+                <div class="media-player">
+
+                    <h3>
+                        Welcome Message
+                    </h3>
+
+                    <audio controls>
+
+                        <source
+                            src="media/welcome.mp3"
+                            type="audio/mpeg"
+                        >
+
+                        Your browser does not support HTML5 audio.
+
+                    </audio>
+
+                    <p class="audio-note">
+                        Listen to our admission welcome message.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer>
+
+        <p>
+            Student Admission Portal
+        </p>
+
+        <p>
+            Web Technology Laboratory · Assignment I
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
