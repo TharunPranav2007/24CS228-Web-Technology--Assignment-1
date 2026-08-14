@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Understanding the World Wide Web</title>
+
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="hero">
+
+        <div class="hero-content">
+            <p class="subtitle">WEB TECHNOLOGY</p>
+
+            <h1>Understanding the World Wide Web</h1>
+
+            <p>
+                Explore how the Internet, websites, browsers and
+                servers work together to deliver information.
+            </p>
+        </div>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#internet">Internet</a>
+            <a href="#network">Networks</a>
+            <a href="#url">URL</a>
+            <a href="#domain">Domain</a>
+            <a href="#browser-server">Browser & Server</a>
+            <a href="#working">How Websites Work</a>
+            <a href="#scripting">Client vs Server</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="container">
+
+        <!-- Introduction -->
+        <section class="intro">
+
+            <h2>Welcome to the World Wide Web</h2>
+
+            <p>
+                The World Wide Web is a system of interconnected web
+                pages and resources that can be accessed through the
+                Internet using web browsers.
+            </p>
+
+            <p>
+                This page explains the fundamental concepts required
+                to understand how websites communicate and operate.
+            </p>
+
+        </section>
+
+
+        <!-- ================= 1. INTERNET OVERVIEW ================= -->
+        <section id="internet" class="topic-section">
+
+            <div class="section-heading">
+                <span class="section-number">01</span>
+
+                <div>
+                    <h2>Internet Overview</h2>
+                    <p>The global network connecting computers and devices.</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+
+                <p>
+                    The Internet is a worldwide network of interconnected
+                    computer networks. It allows computers, mobile devices,
+                    servers and other devices to communicate and exchange
+                    information.
+                </p>
+
+                <p>
+                    When a user accesses a website, the device communicates
+                    with a web server through the Internet to request and
+                    receive information.
+                </p>
+
+                <!-- Simple Internet diagram -->
+                <div class="diagram">
+
+                    <div class="diagram-box">
+                        💻
+                        <strong>User Device</strong>
+                    </div>
+
+                    <div class="arrow">→</div>
+
+                    <div class="diagram-box">
+                        🌐
+                        <strong>Internet</strong>
+                    </div>
+
+                    <div class="arrow">→</div>
+
+                    <div class="diagram-box">
+                        🖥️
+                        <strong>Web Server</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 2. NETWORK CONCEPTS ================= -->
+        <section id="network" class="topic-section">
+
+            <div class="section-heading">
+                <span class="section-number">02</span>
+
+                <div>
+                    <h2>Fundamental Computer Network Concepts</h2>
+                    <p>Understanding how devices communicate with each other.</p>
+                </div>
+            </div>
+
+            <div class="network-grid">
+
+                <article class="concept-card">
+
+                    <div class="card-icon">🏠</div>
+
+                    <h3>LAN</h3>
+
+                    <p>
+                        Local Area Network connects devices within a
+                        limited geographical area such as a home,
+                        laboratory or college building.
+                    </p>
+
+                </article>
+
+
+                <article class="concept-card">
+
+                    <div class="card-icon">🏙️</div>
+
+                    <h3>MAN</h3>
+
+                    <p>
+                        Metropolitan Area Network connects networks
+                        across a city or large campus.
+                    </p>
+
+                </article>
+
+
+                <article class="concept-card">
+
+                    <div class="card-icon">🌍</div>
+
+                    <h3>WAN</h3>
+
+                    <p>
+                        Wide Area Network covers a large geographical
+                        area. The Internet is the largest example.
+                    </p>
+
+                </article>
+
+
+                <article class="concept-card">
+
+                    <div class="card-icon">🔗</div>
+
+                    <h3>Protocol</h3>
+
+                    <p>
+                        A protocol is a set of rules that defines how
+                        devices communicate and exchange data.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 3. URL ================= -->
+        <section id="url" class="topic-section">
+
+            <div class="section-heading">
+                <span class="section-number">03</span>
+
+                <div>
+                    <h2>URL and Its Structure</h2>
+                    <p>Understanding the address used to access web resources.</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+
+                <p>
+                    URL stands for <strong>Uniform Resource Locator</strong>.
+                    It specifies the location of a resource on the Web.
+                </p>
+
+                <!-- URL example -->
+                <div class="url-example">
+
+                    <span class="protocol">https://</span><span class="www">www.</span><span
+                        class="domain-part">example.com</span><span class="path">/about/index.html</span>
+
+                </div>
+
+
+                <div class="url-parts">
+
+                    <div>
+                        <strong>https://</strong>
+                        <p>Protocol used to communicate securely.</p>
+                    </div>
+
+                    <div>
+                        <strong>www</strong>
+                        <p>Indicates the web service or host.</p>
+                    </div>
+
+                    <div>
+                        <strong>example.com</strong>
+                        <p>Domain name of the website.</p>
+                    </div>
+
+                    <div>
+                        <strong>/about/index.html</strong>
+                        <p>Path identifying the requested resource.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 4. DOMAIN NAME ================= -->
+        <section id="domain" class="topic-section">
+
+            <div class="section-heading">
+                <span class="section-number">04</span>
+
+                <div>
+                    <h2>Domain Name</h2>
+                    <p>The human-readable identity of a website.</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+
+                <p>
+                    A domain name is a human-readable name used to identify
+                    a website on the Internet. It is easier for users to
+                    remember than a numerical IP address.
+                </p>
+
+                <div class="domain-example">
+
+                    <div class="domain-part-box">
+                        <strong>www</strong>
+                        <span>Subdomain</span>
+                    </div>
+
+                    <div class="domain-dot">.</div>
+
+                    <div class="domain-part-box">
+                        <strong>example</strong>
+                        <span>Domain</span>
+                    </div>
+
+                    <div class="domain-dot">.</div>
+
+                    <div class="domain-part-box">
+                        <strong>com</strong>
+                        <span>Top-Level Domain</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 5. BROWSER & SERVER ================= -->
+        <section id="browser-server" class="topic-section">
+
+            <div class="section-heading">
+                <span class="section-number">05</span>
+
+                <div>
+                    <h2>Web Browsers and Web Servers</h2>
+                    <p>Two important components of the Web.</p>
+                </div>
+            </div>
+
+
+            <div class="browser-server-grid">
+
+                <article class="large-card">
+
+                    <div class="large-icon">🌐</div>
+
+                    <h3>Web Browser</h3>
+
+                    <p>
+                        A web browser is software used to access and
+                        display websites. It interprets HTML, CSS and
+                        JavaScript and presents the result to the user.
+                    </p>
+
+                    <ul>
+                        <li>Requests web resources</li>
+                        <li>Displays web pages</li>
+                        <li>Executes client-side JavaScript</li>
+                    </ul>
+
+                </article>
+
+
+                <article class="large-card">
+
+                    <div class="large-icon">🖥️</div>
+
+                    <h3>Web Server</h3>
+
+                    <p>
+                        A web server is a system that stores and delivers
+                        web resources to clients when they request them.
+                    </p>
+
+                    <ul>
+                        <li>Receives client requests</li>
+                        <li>Processes requests</li>
+                        <li>Sends responses to clients</li>
+                    </ul>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 6. HOW WEBSITE WORKS ================= -->
+        <section id="working" class="topic-section">
+
+            <div class="section-heading">
+                <span class="section-number">06</span>
+
+                <div>
+                    <h2>Working Principle of a Website</h2>
+                    <p>How a webpage reaches the user's browser.</p>
+                </div>
+            </div>
+
+
+            <div class="content-card">
+
+                <div class="workflow">
+
+                    <div class="workflow-step">
+                        <span>1</span>
+                        <strong>User</strong>
+                        <p>Enters a URL</p>
+                    </div>
+
+                    <div class="workflow-arrow">→</div>
+
+                    <div class="workflow-step">
+                        <span>2</span>
+                        <strong>Browser</strong>
+                        <p>Sends request</p>
+                    </div>
+
+                    <div class="workflow-arrow">→</div>
+
+                    <div class="workflow-step">
+                        <span>3</span>
+                        <strong>Server</strong>
+                        <p>Processes request</p>
+                    </div>
+
+                    <div class="workflow-arrow">→</div>
+
+                    <div class="workflow-step">
+                        <span>4</span>
+                        <strong>Response</strong>
+                        <p>Returns resources</p>
+                    </div>
+
+                    <div class="workflow-arrow">→</div>
+
+                    <div class="workflow-step">
+                        <span>5</span>
+                        <strong>Browser</strong>
+                        <p>Displays webpage</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 7. CLIENT VS SERVER ================= -->
+        <section id="scripting" class="topic-section">
+
+            <div class="section-heading">
+                <span class="section-number">07</span>
+
+                <div>
+                    <h2>Client-side vs Server-side Scripting</h2>
+                    <p>Understanding where web application code executes.</p>
+                </div>
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Feature</th>
+                            <th>Client-side Scripting</th>
+                            <th>Server-side Scripting</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Execution</td>
+                            <td>User's browser</td>
+                            <td>Web server</td>
+                        </tr>
+
+                        <tr>
+                            <td>Common Technologies</td>
+                            <td>HTML, CSS, JavaScript</td>
+                            <td>PHP, Java, Python, Node.js</td>
+                        </tr>
+
+                        <tr>
+                            <td>Primary Purpose</td>
+                            <td>Interface and browser-side interaction</td>
+                            <td>Server-side processing and data handling</td>
+                        </tr>
+
+                        <tr>
+                            <td>Database Access</td>
+                            <td>Normally through server-side code</td>
+                            <td>Can communicate with databases</td>
+                        </tr>
+
+                        <tr>
+                            <td>Example</td>
+                            <td>Form validation in browser</td>
+                            <td>Processing login credentials</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SUMMARY ================= -->
+        <section class="summary">
+
+            <h2>Web Technology at a Glance</h2>
+
+            <p>
+                A website works through the interaction between users,
+                browsers, networks, servers and web technologies.
+                Understanding these fundamental concepts provides a
+                strong foundation for developing modern websites.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>
+            Created by 24CS228 - Tharun Pranav T
+        </p>
+        <p>
+            For Web Technology Assignment – I
+        </p>
+
+        <p>
+            Using HTML5 & CSS3
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

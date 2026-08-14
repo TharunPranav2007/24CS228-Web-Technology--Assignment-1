@@ -1,0 +1,832 @@
+/* =========================================
+   GENERAL PAGE STYLING
+   ========================================= */
+
+/* Remove default spacing and make sizing predictable */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling when navigation links are clicked */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f4f7fb;
+    color: #263238;
+}
+
+
+/* =========================================
+   HERO HEADER
+   ========================================= */
+
+.hero {
+    min-height: 420px;
+
+    /* Gradient background */
+    background: linear-gradient(
+        135deg,
+        #172554,
+        #2563eb,
+        #06b6d4
+    );
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+/* Content inside hero section */
+.hero-content {
+    max-width: 850px;
+
+    animation: fadeIn 1.2s ease;
+}
+
+.subtitle {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    opacity: 0.85;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p:last-child {
+    font-size: 1.15rem;
+    max-width: 650px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+
+/* =========================================
+   NAVIGATION BAR
+   ========================================= */
+
+.navbar {
+    background: white;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    border-bottom: 1px solid #dbe3ef;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 12px 20px;
+
+    overflow-x: auto;
+}
+
+.nav-container a {
+    color: #1e3a8a;
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    padding: 9px 13px;
+
+    border-radius: 8px;
+
+    white-space: nowrap;
+
+    transition: 0.3s ease;
+}
+
+.nav-container a:hover {
+    background: #2563eb;
+    color: white;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.container {
+    width: min(1200px, 92%);
+    margin: auto;
+}
+
+
+/* =========================================
+   INTRODUCTION
+   ========================================= */
+
+.intro {
+    text-align: center;
+
+    max-width: 850px;
+
+    margin: 70px auto 50px;
+}
+
+.intro h2 {
+    font-size: 2.2rem;
+    color: #172554;
+
+    margin-bottom: 20px;
+}
+
+.intro p {
+    margin-bottom: 10px;
+    color: #54616f;
+}
+
+
+/* =========================================
+   TOPIC SECTIONS
+   ========================================= */
+
+.topic-section {
+    margin: 80px 0;
+}
+
+/* Section heading */
+.section-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+.section-number {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    background: #2563eb;
+    color: white;
+
+    border-radius: 15px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.section-heading h2 {
+    color: #172554;
+    font-size: 1.8rem;
+}
+
+.section-heading p {
+    color: #64748b;
+}
+
+
+/* =========================================
+   COMMON CONTENT CARD
+   ========================================= */
+
+.content-card {
+    background: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.content-card p {
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   INTERNET DIAGRAM
+   ========================================= */
+
+.diagram {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.diagram-box {
+    min-width: 180px;
+
+    padding: 25px;
+
+    background: #eff6ff;
+
+    border: 2px solid #bfdbfe;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    color: #1e3a8a;
+
+    font-size: 2rem;
+
+    transition: transform 0.3s ease;
+}
+
+.diagram-box strong {
+    display: block;
+
+    font-size: 1rem;
+
+    margin-top: 8px;
+}
+
+.diagram-box:hover {
+    transform: translateY(-8px);
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   NETWORK CONCEPT CARDS
+   ========================================= */
+
+.network-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.concept-card {
+    background: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 16px;
+
+    padding: 30px 25px;
+
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.concept-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #60a5fa;
+
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.12);
+}
+
+.card-icon {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+
+.concept-card h3 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+.concept-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+
+/* =========================================
+   URL SECTION
+   ========================================= */
+
+.url-example {
+    margin: 30px 0;
+
+    padding: 25px;
+
+    background: #0f172a;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    font-family: "Courier New", monospace;
+
+    font-size: clamp(0.85rem, 2vw, 1.4rem);
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+}
+
+.protocol {
+    color: #38bdf8;
+}
+
+.www {
+    color: #a78bfa;
+}
+
+.domain-part {
+    color: #4ade80;
+}
+
+.path {
+    color: #fbbf24;
+}
+
+.url-parts {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.url-parts div {
+    padding: 20px;
+
+    background: #f8fafc;
+
+    border-left: 4px solid #2563eb;
+
+    border-radius: 8px;
+}
+
+.url-parts strong {
+    color: #1d4ed8;
+}
+
+.url-parts p {
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+
+/* =========================================
+   DOMAIN NAME
+   ========================================= */
+
+.domain-example {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 35px;
+
+    flex-wrap: wrap;
+}
+
+.domain-part-box {
+    padding: 20px 30px;
+
+    background: #eff6ff;
+
+    border: 2px solid #bfdbfe;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.domain-part-box strong {
+    display: block;
+
+    color: #1d4ed8;
+
+    font-size: 1.3rem;
+}
+
+.domain-part-box span {
+    display: block;
+
+    color: #64748b;
+
+    font-size: 0.8rem;
+
+    margin-top: 5px;
+}
+
+.domain-dot {
+    font-size: 2rem;
+
+    color: #64748b;
+
+    margin: 0 8px;
+}
+
+
+/* =========================================
+   BROWSER AND SERVER
+   ========================================= */
+
+.browser-server-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.large-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+
+    transition: transform 0.3s ease;
+}
+
+.large-card:hover {
+    transform: translateY(-7px);
+}
+
+.large-icon {
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+}
+
+.large-card h3 {
+    color: #1d4ed8;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 15px;
+}
+
+.large-card p {
+    color: #64748b;
+
+    margin-bottom: 20px;
+}
+
+.large-card ul {
+    padding-left: 20px;
+
+    color: #475569;
+}
+
+.large-card li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   WEBSITE WORKFLOW
+   ========================================= */
+
+.workflow {
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.workflow-step {
+    flex: 1;
+
+    min-width: 140px;
+
+    text-align: center;
+
+    padding: 25px 15px;
+
+    background: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 14px;
+}
+
+.workflow-step span {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 12px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.workflow-step strong {
+    display: block;
+
+    color: #1e3a8a;
+
+    margin-bottom: 5px;
+}
+
+.workflow-step p {
+    font-size: 0.85rem;
+
+    margin: 0;
+}
+
+.workflow-arrow {
+    display: flex;
+
+    align-items: center;
+
+    color: #2563eb;
+
+    font-size: 1.8rem;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   COMPARISON TABLE
+   ========================================= */
+
+.table-container {
+    overflow-x: auto;
+
+    background: white;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 700px;
+}
+
+thead {
+    background: #172554;
+
+    color: white;
+}
+
+th,
+td {
+    padding: 18px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    font-size: 0.95rem;
+}
+
+td {
+    color: #475569;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+td:first-child {
+    font-weight: bold;
+
+    color: #1e3a8a;
+}
+
+
+/* =========================================
+   SUMMARY SECTION
+   ========================================= */
+
+.summary {
+    margin: 80px 0;
+
+    padding: 50px 35px;
+
+    background: linear-gradient(
+        135deg,
+        #172554,
+        #1d4ed8
+    );
+
+    color: white;
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.summary h2 {
+    margin-bottom: 15px;
+
+    font-size: 2rem;
+}
+
+.summary p {
+    max-width: 750px;
+
+    margin: auto;
+
+    opacity: 0.9;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    padding: 35px 20px;
+
+    background: #0f172a;
+
+    color: #cbd5e1;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =========================================
+   ANIMATION
+   ========================================= */
+
+/* Animation used by the hero content */
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================
+   TABLET RESPONSIVENESS
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .network-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .url-parts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .browser-server-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .nav-container {
+        justify-content: flex-start;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+    }
+
+    .section-number {
+        width: 50px;
+        height: 50px;
+    }
+
+    .section-heading h2 {
+        font-size: 1.4rem;
+    }
+
+    .content-card,
+    .large-card {
+        padding: 25px 20px;
+    }
+
+    .network-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .url-parts {
+        grid-template-columns: 1fr;
+    }
+
+    .diagram {
+        flex-direction: column;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+
+    .workflow {
+        flex-direction: column;
+    }
+
+    .workflow-arrow {
+        justify-content: center;
+
+        transform: rotate(90deg);
+    }
+
+    .domain-example {
+        flex-direction: column;
+    }
+
+    .domain-dot {
+        transform: rotate(90deg);
+    }
+
+    .summary {
+        padding: 40px 20px;
+    }
+
+}
