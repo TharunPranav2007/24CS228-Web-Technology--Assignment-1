@@ -61,7 +61,8 @@ The assignment consists of five scenario-based problems covering web technology 
 │   ├── style.css
 │   └── script.js
 │
-└── README.md
+├── LICENSE
+└── README.md   
 ```
 
 ---
@@ -406,7 +407,7 @@ The assignment also helped in understanding how different web technologies work 
 
 # 👨‍💻 Author
 
-**24CS228**
+**24CS228 - Tharun Pranav T**
 
 **B.E. Computer Science and Engineering**
 
