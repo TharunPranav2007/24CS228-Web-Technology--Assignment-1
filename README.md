@@ -5,9 +5,9 @@
 | Details | Information |
 |---|---|
 | **Course** | U21CS501 – Web Technology |
-| **Assignment** | Assignment I |
-| **Year** | III |
-| **Semester** | V |
+| **Name** | Tharun Pranav T |
+| **Roll No** | 24CS228 |
+| **Year/Semester** | III/V |
 | **Department** | Computer Science and Engineering |
 | **Academic Year** | 2026–2027 |
 | **Institution** | KPR Institute of Engineering and Technology |
@@ -384,9 +384,7 @@ Through this assignment, the following concepts were practiced:
 
 The repository contains the source files required for the assignment:
 
-- HTML source files
-- CSS source files
-- JavaScript source files
+- HTML, CSS, Javascript source files
 - Supporting images/media
 - Inline code comments
 - Scenario-wise implementations
@@ -414,5 +412,3 @@ The assignment also helped in understanding how different web technologies work 
 **KPR Institute of Engineering and Technology**
 
 ---
-
-⭐ **U21CS501 – Web Technology | Assignment I**
