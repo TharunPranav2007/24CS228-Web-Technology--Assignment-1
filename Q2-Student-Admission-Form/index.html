@@ -109,9 +109,10 @@
 
             <div class="media-image">
 
+                <!-- College campus image -->
                 <img
-                    src="media/campus.jpg"
-                    alt="College campus"
+                    src="media/kpr.jpg"
+                    alt="KPR Institute of Engineering and Technology Campus"
                 >
 
             </div>
@@ -749,7 +750,7 @@
             <div class="media-grid">
 
 
-                <!-- Video -->
+                <!-- Campus Tour YouTube Video -->
 
                 <div class="media-player">
 
@@ -757,19 +758,22 @@
                         Campus Introduction
                     </h3>
 
-                    <video
-                        controls
-                        poster="media/video-poster.jpg"
-                    >
+                    <!--
+                        YouTube campus tour embedded using iframe.
+                        The iframe displays the external video
+                        directly inside the webpage.
+                    -->
 
-                        <source
-                            src="media/campus-tour.mp4"
-                            type="video/mp4"
-                        >
-
-                        Your browser does not support HTML5 video.
-
-                    </video>
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/i0oycfxohGA?si=7F8IF47QH-0LKjyq"
+                        title="KPR Institute of Engineering and Technology Campus Tour"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
 
                 </div>
 
@@ -811,13 +815,17 @@
          ===================================================== -->
 
     <footer>
-
         <p>
             Student Admission Portal
         </p>
-
         <p>
-            Web Technology Laboratory · Assignment I
+            Created by 24CS228 - Tharun Pranav T
+        </p>
+        <p>
+            For Web Technology Assignment - 1
+        </p>
+        <p>
+            Using HTML5, CSS3
         </p>
 
     </footer>
