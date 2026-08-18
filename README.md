@@ -1,10 +1,10 @@
-# U21CS501 Web Technology – Assignment I
+# U21CS501 Web Technologies – Assignment I
 
 ## 📌 Assignment Details
 
 | Details | Information |
 |---|---|
-| **Course** | U21CS501 – Web Technology |
+| **Course** | U21CS501 – Web Technologies |
 | **Name** | Tharun Pranav T |
 | **Roll No** | 24CS228 |
 | **Year/Semester** | III/V |
@@ -16,7 +16,7 @@
 
 ## 📖 About the Assignment
 
-This repository contains the source code and implementations developed for **Web Technology Laboratory Assignment I**.
+This repository contains the source code and implementations developed for **Web Technologies Assignment I**.
 
 The assignment focuses on fundamental web technologies including:
 
